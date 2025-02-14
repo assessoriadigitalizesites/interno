@@ -989,24 +989,30 @@ body {
   color: #08356e;
   margin-left: 5px;
 }
-
 .produtos-category-btn {
   width: fit-content;
-  display: block;
-  border: 0;
-  font-family: Baloo-Regular;
+  display: inline-block;
+  border: none;
+  font-family: 'Baloo-Regular', sans-serif;
   text-transform: uppercase;
   padding: 14px 50px 14px 30px;
   font-size: 18px;
-  border-radius: 100px;
+  border-radius: 50px;
   color: #FFF;
   cursor: pointer;
-  transition: all 0.2s linear;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   background-color: #1b5eb7;
   background-image: url("../img/icon-right-white.svg");
   background-size: 24px;
   background-repeat: no-repeat;
-  background-position: calc(100% - 10px);
+  background-position: right 15px center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito ao passar o mouse */
+.produtos-category-btn:hover {
+  background-color: #14458c;
+  transform: scale(1.05);
 }
 
 .sobre {
