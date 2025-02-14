@@ -1,0 +1,265 @@
+/* 
+ATHOS INFORMÁTICA
+CSS DE IMPRESSÃO RELATÓRIOS ONLINE
+REVISAO: 1.0.0.1
+*/	
+
+#dvPrincipal * {
+	margin:0;
+	padding:0;
+	text-align:left;
+	border:none;
+	color:#333;
+	}
+	
+	#dvPrincipal h2 {
+		font-size:1.2em !important;
+		text-align:center !important;
+		font-weight:600 !important;
+		margin:0 !important;
+		padding:0 !important;
+		color:#444 !important;
+		}
+	
+	#dvPrincipal h3 {
+		font-size:1.1em !important;
+		font-weight:600;
+		padding:0 0 0 5px !important;
+		margin:0 !important;
+		border:none !important;
+		color:#444 !important;
+		}
+	
+	#dvPrincipal h4 {
+		font-size:1.1em;
+		font-weight:600;
+		padding:0 0 0 15px;
+		}
+	
+	#dvPrincipal .Titulo, #dvPeriodo {
+		padding:15px 15px 10px 0px;
+		font-size:16px;
+		text-transform:uppercase;
+		font-weight:bold;
+		}
+	
+	#dvPrincipal .TituloBg {
+		padding:15px 15px 5px 0px;
+		border-bottom:1px solid #959595;
+		font-weight:bold;
+		z-index:200!important;
+		font-size:15px;
+		}
+	
+
+	#dvPrincipal td {
+		padding:2px;
+		}
+	
+	#dvPrincipal .Titulo_Devedores {
+		font-weight:600;
+		text-align:left;
+		}
+	
+	#dvPrincipal .Titulo_Devedores_Valor {
+		font-weight:600;
+		text-align:right;
+		}
+	
+	#dvPrincipal .Descricao {
+	
+	}
+	/* titulo coluna e valores alinhados abaixo */
+	
+	#dvPrincipal .sTitulo {
+		text-align:right;
+		font-weight:600;
+		margin:0 20px 0 0;
+		padding:0 0 5px 0;
+		}
+	
+	#dvPrincipal .sTitulo-left {
+		text-align:left;
+		font-weight:600;
+		font-size:12px;
+		text-transform:uppercase;
+		padding:15px 7px 14px 7px!important;
+		background:#E5E5E5;
+		}
+	
+	#dvPrincipal .sTitulo-rigth {
+		text-align:right;
+		font-weight:600;
+		font-size:12px;
+		text-transform:uppercase;
+		ppadding:15px 7px 14px 7px!important;
+		background:#E5E5E5;
+		}
+	
+	#dvPrincipal .Valores {
+		text-align:right !important;
+		}
+		
+		
+	#dvPrincipal .valorSaldo {
+		width:120px!important;
+		text-align:right;
+		}
+	
+	#dvPrincipal .Indice {
+		text-align:right;
+		font-weight:600;
+		}
+	
+	#dvPrincipal .Dados, #dvPrincipal .Total {
+		text-align:right;
+		}
+	
+	#dvPrincipal .tituloTotal {
+		font-weight:bold;
+		font-size:13px;
+		padding:10px 0 5px 0;
+		}
+		
+		
+	#dvPrincipal .centro {
+		text-align:center;
+		}	
+	
+	.totalRecibo , .totalUnidade, .totalDebito, .totalCredito{
+		background:#E4E4E4;
+		font-weight:bold;
+		padding:0 0 5px 0;
+		}
+	
+	
+	#dvPrincipal .sTitulo-Condo td {
+		font-size:13px!important;
+		text-transform:uppercase;
+		padding:0px 0 20px 0!important;
+		}
+	
+	
+	
+	#dvPrincipal .financas-wm-titulo {
+	font-size:16px;
+	text-align:center !important;
+	font-weight:bold;
+	border-top:1px solid #ccc;
+	padding:5px 10px 5px 0;
+	margin:5px 0 0 0;
+	}
+	
+	/* titulo interno da tabela */
+	#dvPrincipal .financas-wm-sTitulo {
+	text-align:right!important;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:0 0px 5px 0;
+	}
+	
+	#dvPrincipal .financas-wm-sTituloLeft{
+		text-align:left!important;
+		font-weight:bold!important;
+		text-transform:uppercase!important;
+		width:100px!important;
+		}
+	
+	.marginTopResumo{
+		padding:20px 0 30px 0!important;
+		}
+		
+	
+	/* Valores que devem ficar centralizados (ex: lancto, data, bloco, conta e cpmf */
+	#dvPrincipal .financas-wm-item {
+	text-align:center;
+	padding:0 3px 0 3px;
+	white-space:pre;
+	}
+	
+	/* valores alinhados a direita */
+	#dvPrincipal .financas-wm-valor {
+	text-align:right;
+	width:170px;
+	padding:0 0 0 10px;
+	white-space:pre;
+	}
+	
+	/* valores alinhados a direita com destaque (negrito) */
+	#dvPrincipal .financas-wm-total {
+	text-align:right;
+	font-weight:bold;
+	padding:0 0 0 10px;
+	white-space:pre;
+	}
+	
+	.espacamento{padding:50px 0 10px 0!important; }	
+
+
+
+
+	#dvPrincipal {
+		width:100%;
+		background:#fff !important;
+		margin:15px 0 0 0;
+		}
+
+		#dvPrincipal .zebrada{
+			background:#F7F7F7;
+			}
+
+
+		#dvPrincipal hr {
+			float:left;
+			height:1px;
+			margin:10px 0 10px 0;
+			background:#999;
+			}
+		
+		#dvPrincipal  tr td{
+			padding:14px 2px 14px 3px!important;
+			font-size:12.5px; /*!important*/
+			}
+
+		#dvPrincipal .separacao{
+			background:#D7D7D7;
+			}
+
+
+		#dvPrincipal .center {
+			text-align:center;
+			}
+		
+		#dvPrincipal table {
+			width:100%;
+			background:#fff !important;
+			font-family: Arial, Helvetica, sans-serif !important;
+			}
+
+
+	#dvPrincipal .Line {
+		float:left;
+		width:20px !important;
+		border-top:1px dotted #959595;
+		text-indent:-90000px;
+		padding:10px;
+		display:block;
+	}
+
+	#dvPrincipal .lineFull {
+		height:1px!important;
+		width:900px!important;
+		height:10px!important;
+		border-bottom:1px solid #959595;
+		}
+/**********/
+
+
+	#dvPrincipal tr td {
+   padding: 2px 2px 2px 3px!important;
+}
+
+#dvPrincipal .sTitulo-left {
+    padding: 4px 5px 4px 5px!important;
+	text-align: center !important;
+}

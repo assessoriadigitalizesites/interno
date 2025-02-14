@@ -1,0 +1,144 @@
+#dvPrincipal * {
+	font-family: Arial, verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.termino {
+	page-break-after: always;
+}
+
+#dvPrincipal hr {
+	float: left;
+	width: 100%;
+	height: 1px;
+	margin: 10px 0 10px 0;
+	/*background: #999;*/
+}
+
+#dvPrincipal .Line {
+	float: left;
+	width: 20px !important;
+	border-top: 1px dotted #333;
+	text-indent: -90000px;
+	padding: 10px;
+	display: block;
+}
+
+#dvPrincipal .Titulo {
+	border: 1px solid grey;
+	font-size: 16px !important;
+	font-weight: bold !important;
+	font-weight: 600 !important;
+	padding: 10px;
+}
+
+#dvPrincipal h2 {
+	font-size: 1.2em;
+	border-top: 2px #999;
+	text-align: center;
+}
+
+#dvPrincipal h3 {
+	font-size: 1.1em;
+	padding: 0 0 0 5px;
+}
+
+#dvPrincipal h4 {
+	font-size: 1.1em;
+	padding: 0 0 0 30px;
+}
+
+#dvPrincipal table tr td {
+	padding: 2px 2px 2px 3px !important;
+	font-size: 12.5px !important;
+	border: 1px solid #959595 !important;
+}
+
+	#dvPrincipal table tr td strong {
+		font-size: 12.5px !important;
+	}
+
+	#dvPrincipal table tr td div {
+		font-size: 12.5px !important;
+	}
+
+		#dvPrincipal table tr td div b {
+			font-size: 12.5px !important;
+		}
+
+#dvPrincipal table tr td b {
+	font-size: 12.5px !important;
+}
+
+#dvPrincipal .financas-wm-total {
+	text-align: right;
+	font-weight: bold;
+	padding: 0 0 0 10px;
+	white-space: pre;
+}
+
+#dvPrincipal .financas-wm-valor {
+	text-align: right;
+	width: 170px;
+	padding: 0 0 0 10px;
+	white-space: pre;
+}
+
+#dvPrincipal .financas-wm-sTituloLeft {
+	text-align: left !important;
+	font-weight: bold !important;
+	text-transform: uppercase !important;
+	width: 100px !important;
+}
+
+#dvPrincipal .financas-wm-valor {
+	text-align: right;
+	width: 170px;
+	padding: 0 0 0 10px;
+	white-space: pre;
+}
+
+.table-bordered td, .table-bordered th {
+	border: 1px solid #959595 !important;
+}
+
+#dvPrincipal table tr td table {
+	border: 1px solid #959595 !important;
+	width: 100%;
+} 
+
+#dvPrincipal .Descricao {
+	padding:0 0 0 60px;
+} titulo coluna e valores alinhados abaixo 
+#dvPrincipal .sTitulo {
+	text-align:right;
+	font-weight:600;
+	margin:0 20px 0 0;
+	padding:0 20px 5px 0;
+}
+#dvPrincipal .Valores {
+	text-align:right;
+	padding:0 20px 0 0;
+}
+#dvPrincipal .Indice {
+	text-align:right;
+	padding:0 20px 0 0;
+	font-weight:600;
+}
+#dvPrincipal .Dados, .Total {
+	text-align:right;
+	padding:0 20px 0 0;
+}
+
+	#dvPrincipal tr td {
+   padding: 2px 2px 2px 3px!important;
+}
+
+#dvPrincipal .sTitulo-left {
+    padding: 4px 5px 4px 5px!important;
+}
+
+

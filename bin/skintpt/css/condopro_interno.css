@@ -1,0 +1,311 @@
+a,
+a:focus,
+a:visited,
+a:hover {
+    text-decoration: none !important;
+}
+
+.navbar{
+    margin-bottom: 0px !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+#navbarPrincipal .navbar-brand{
+    padding: 0px !important;
+    height: inherit !important;
+}
+
+.page-footer {
+    display: none;
+}
+
+#navbarPrincipal .dropdown-usuario .dropdown-toggle{
+    font-size: 16px !important;
+}
+
+footer{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top: 1293px;
+}
+
+footer.contato-fix{
+    top: 1059px;
+}
+
+#conteudoPrincipal.interno{
+    margin-bottom: 275px;
+}
+
+@media screen and (min-width: 1500px) {
+    footer {
+        top: 1119px !important;
+    }
+
+    html footer.contato-fix {
+        top: 901px !important;
+    }
+}
+@media screen and (min-width: 992px) {
+    footer {
+        top: 1031px;
+    }
+
+    footer.contato-fix{
+        top: 831px;
+    }
+}
+@media screen and (min-width: 576px) {
+    footer{
+        top: 1199px;
+    }
+}
+@media screen and (min-width: 768px) {
+    footer{
+        top: 1165px;
+    }
+
+    footer.contato-fix{
+        top: 831px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    footer {
+        top: 1051px;
+    }
+    footer.contato-fix {
+        top: 851px !important;
+    }
+    iframe{
+        width: 100%;
+        height: 150% !important;
+        
+    }
+    .backdrop {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: #00000080;
+        z-index: 10;
+    }
+    .btn-toggle-mobile {
+        background: #da9224;
+        cursor: pointer;
+        padding: 15px 10px;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        z-index: 20;
+        border-radius: 100%;
+    }
+    .pra-voce .item {
+        width: 350px;
+        border: none;
+        padding: 10px 0px;
+    }
+    .pra-voce .card-header {
+        background: none;
+    }
+
+    .pra-voce .card-header h5{
+        margin-top: 0;
+    }
+
+    .pra-voce .card-body li {
+        margin: 6px 0px;
+    }
+    .box-boleto {
+        top: 90px;
+        width: 94.8% !important;
+        position: absolute;
+    }
+    .prestacao-interativa {
+        height: 100% !important;
+        min-height: 0px !important;
+    }
+    .fluido {
+        height: 660px;
+    }
+    .pra-voce .card-body li:hover a {
+        font-weight: 600;
+    }
+    .pra-voce .card-body li a {
+        display: block;
+        color: #1f1f1f;
+    }
+    html body #conteudoPrincipal .pra-voce.aberto {
+        width: 350px;
+    }
+    html body #conteudoPrincipal .pra-voce {
+        background: #fff;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        overflow-x: hidden;
+        width: 0px;
+        transition: width 0.5s ease-in-out;
+        z-index: 20;
+        border-top-right-radius: 10px !important;
+        border-bottom-right-radius: 10px !important;
+        border-top-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        box-shadow: 10px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    }
+    .btn-toggle-mobile>div {
+        background: #fff;
+        width: 100%;
+        height: 3px;
+        border-radius: 40px;
+        position: relative;
+        animation-play-state: paused;
+    }
+    .btn-toggle-mobile.click1>div,
+    .btn-toggle-mobile.click2>div {
+        animation-play-state: running;
+    }
+    .btn-toggle-mobile>div:nth-child(1) {
+        animation-name: icon-change-first;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+    .btn-toggle-mobile.click2>div:nth-child(1) {
+        animation-name: icon-change-first-reverse;
+    }
+    .btn-toggle-mobile>div:nth-child(2) {
+        margin: 5px 0px;
+        animation-name: icon-change-middle;
+        animation-duration: 250ms;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+    .btn-toggle-mobile.click2>div:nth-child(2) {
+        animation-name: icon-change-middle-reverse;
+    }
+    .btn-toggle-mobile>div:nth-child(3) {
+        animation-name: icon-change-last;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+    .btn-toggle-mobile.click2>div:nth-child(3) {
+        animation-name: icon-change-last-reverse;
+    }
+    @keyframes icon-change-first {
+        50% {
+            transform: translateY(8px);
+            top: 0;
+        }
+        100% {
+            transform: rotate(45deg);
+            top: 8px;
+        }
+    }
+    @keyframes icon-change-first-reverse {
+        0% {
+            transform: rotate(45deg);
+            top: 8px;
+        }
+        50% {
+            transform: rotate(0deg);
+            top: 8px;
+        }
+        100% {
+            transform: translateY(0px);
+            top: 0;
+        }
+    }
+    @keyframes icon-change-middle {
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes icon-change-middle-reverse {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes icon-change-last {
+        50% {
+            transform: translateY(-8px);
+            top: 0;
+        }
+        100% {
+            transform: rotate(-45deg);
+            top: -8px;
+        }
+    }
+    @keyframes icon-change-last-reverse {
+        0% {
+            transform: rotate(-45deg);
+            top: -8px;
+        }
+        50% {
+            transform: rotate(0deg);
+            top: -8px;
+        }
+        100% {
+            transform: translateY(0px);
+            top: 0;
+        }
+    }
+}
+#navbarPrincipal .dropdown-usuario .dropdown-toggle+.dropdown-menu a {
+    font-size: 16px !important;
+}
+
+iframe[name="ifWkpSessao"]{
+    height: initial !important;
+}
+
+#iDoc{
+    display: none;
+}
+
+.logo-print{
+    display: none !important;
+}
+
+@media print{
+    .boas-vindas, .saudacao, #menu-full, .header-relatorio, footer, #navbarSupportedContent, .dropdown-usuario, .logo-normal{
+        display: none !important;
+    }
+
+    #navbarPrincipal{
+        display: block !important;
+    }
+
+    .navbar-brand, #navbarPrincipal{
+        text-align: center !important;
+    }
+    
+    #navbarPrincipal{
+        background: #a1a1a1 !important;
+    }
+
+    .logo-print{
+        display: block !important;
+    }
+
+    #conteudoPrincipal{
+        background: none !important;
+    }
+
+    .resultado-container, .resultado-container .overflow-resultado{
+        height: unset !important;
+        max-height: unset !important;
+    }
+}

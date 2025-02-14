@@ -1,0 +1,53 @@
+/* Quem utiliza:
+/* Fluxo de caixa, Movimento diÃ¡rio
+
+/* titulo interno tabela (ex: Resumo Financeiro) */
+#dvPrincipal .financas-wm-titulo {
+	font-size:16px;
+	text-align:center !important;
+	font-weight:bold;
+	text-transform:uppercase;
+	border-top:1px solid #ccc;
+	padding:5px 10px 5px 0;
+	margin:5px 0 0 0;
+	}
+
+/* titulo interno da tabela */
+#dvPrincipal .financas-wm-sTitulo {
+	text-align:right!important;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:0 0px 5px 0;
+	}
+	
+	#dvPrincipal .financas-wm-sTituloLeft{
+		text-align:left!important;
+		font-weight:bold!important;
+		text-transform:uppercase!important;
+		width:100px!important;
+		}
+	
+	.marginTopResumo{
+		padding:20px 0 30px 0!important;
+		}
+		
+
+/* Valores que devem ficar centralizados (ex: lancto, data, bloco, conta e cpmf */
+#dvPrincipal .financas-wm-item {
+	text-align:center;
+	padding:0 3px 0 3px;
+	white-space:pre;
+	}
+
+/* valores alinhados a direita */
+#dvPrincipal .financas-wm-valor {
+
+	}
+	
+/* valores alinhados a direita com destaque (negrito) */
+#dvPrincipal .financas-wm-total {
+	text-align:right;
+	font-weight:bold;
+	padding:0 0 0 10px;
+	white-space:pre;
+	}

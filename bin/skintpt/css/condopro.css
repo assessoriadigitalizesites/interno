@@ -1,0 +1,2201 @@
+/****************************************
+*                                       *
+*                                       *
+*                                       *
+*                                       *
+*                                       *
+*                                       *
+*                                       *
+*             IMPORTANTE                *
+*                                       *
+*    Mudar Acentuaï¿½ï¿½o para ISO 8859-1   *
+*                                       *
+*                                       *
+*                                       *
+*                                       *
+*                                       *
+*                                       *
+*                                       *
+****************************************/
+
+* {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.fix-animation .animated {
+    animation-play-state: paused;
+}
+
+.delay-500ms {
+    animation-delay: 500ms;
+}
+
+.dropdown-item+.linkBranco {
+    font-size: 16px !important;
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: #0000;
+    border: 0;
+}
+
+.sweet-alert.showSweetAlert {
+    margin-top: 0px !important;
+}
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 30;
+}
+
+.loading .content {
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+}
+
+.loading img {
+    width: 80px;
+}
+
+.loading p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3a3a3a;
+    width: 175px;
+    text-align: left;
+}
+
+.loading p span {
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 0px;
+    line-height: 0.8;
+    letter-spacing: 1px;
+    animation: loadingTxt 1s infinite step-end;
+    transition: none !important;
+}
+
+@keyframes loadingTxt {
+    0% {
+        width: 0px;
+    }
+    25% {
+        width: 8px;
+    }
+    50% {
+        width: 15px;
+    }
+    75% {
+        width: 25px;
+    }
+    100% {
+        width: 30px;
+    }
+}
+
+#navbarPrincipal {
+    background-image: linear-gradient(to right, #f8ebca, #eabe6a, #d38c2f, #eabe6a, #f8ebca);
+}
+
+#navbarPrincipal.sindico {
+    background-image: linear-gradient(to right, #384967, #435573, #4d6280, #596f8c, #647c99);
+}
+
+#navbarPrincipal .navbar-brand {
+    background: white;
+    width: 190px;
+    height: 140px;
+    position: absolute;
+    top: 0px;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+}
+
+#navbarPrincipal .navbar-brand img {
+    width: 120px;
+}
+
+#navbarPrincipal .dropdown-atendimento .dropdown-toggle {
+    background: #da9224;
+    border-radius: 0px;
+    border-color: #da9224;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    transition: all 0.4s;
+}
+.cond .dropdown-atendimento .dropdown-toggle {
+    margin-left: -80px !important;
+}
+
+#navbarPrincipal .dropdown-atendimento .dropdown-toggle:focus,
+#navbarPrincipal .dropdown-atendimento .dropdown-toggle:hover,
+#navbarPrincipal .dropdown-atendimento .dropdown-toggle:active {
+    transition: all 0.4s;
+    background: #e7b763;
+    border-color: #e7b763;
+    box-shadow: none;
+}
+
+#navbarPrincipal .dropdown-atendimento.show .dropdown-toggle {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#navbarPrincipal .dropdown-atendimento .dropdown-toggle::after {
+    border: none;
+    background: url(../images/ic_toggler_dropdown.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    vertical-align: middle;
+    margin-left: 10px;
+    transition: transform 0.5s;
+}
+
+#navbarPrincipal .dropdown-atendimento:hover .dropdown-toggle::after {
+    transform: rotate(360deg);
+}
+
+#navbarPrincipal .dropdown-atendimento.show .dropdown-toggle::after {
+    background: url(../images/ic_toggler_dropdown_1.png);
+}
+
+#navbarPrincipal .dropdown-atendimento .dropdown-menu {
+    background: #f9ba5b;
+    padding: 0px;
+    margin-top: 0px;
+    border-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#navbarPrincipal .dropdown-atendimento .dropdown-menu .dropdown-item {
+    color: #fff;
+    font-weight: 100;
+    padding: 7px 24px 5px 24px;
+    border-bottom: 1px solid #e69c2e;
+    letter-spacing: 3px;
+    letter-spacing: 0px;
+    font-size: 14px;
+}
+
+#navbarPrincipal .dropdown-atendimento .dropdown-menu .dropdown-item:hover,
+#navbarPrincipal .dropdown-atendimento .dropdown-menu .dropdown-item:focus,
+#navbarPrincipal .dropdown-atendimento .dropdown-menu .dropdown-item:active {
+    background: #e69c2e;
+    color: #fff;
+}
+
+.link-atendimento {
+    background-color: #e69c2e !important;
+    border-bottom: 0px;f9ba5b
+    background-image: url(../images/ic_atendimento_dropdown.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 24px center !important;
+    text-indent: 30px;
+}
+
+#navbarPrincipal .pesquisa-box {
+    margin: 15px 0px;
+}
+
+#navbarPrincipal .dropdown-usuario {
+    width: 100%;
+}
+
+#navbarPrincipal .dropdown-usuario .dropdown-toggle {
+    background: #192232;
+    border-radius: 0px;
+    border: none;
+    color: #fff;
+    padding: 20px 30px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#navbarPrincipal .dropdown-usuario .dropdown-toggle+.dropdown-menu a:hover {
+    background: #e69c2e;
+    color: #fff;
+}
+
+#navbarPrincipal.sindico .dropdown-usuario .dropdown-toggle+.dropdown-menu a:hover {
+    background: #384967;
+    color: #fff;
+}
+
+#navbarPrincipal.sindico .dropdown-usuario .dropdown-toggle {
+    background: #394A66;
+}
+
+#navbarPrincipal .navbar-toggler {
+    background: #e69c2e;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 15px 10px;
+    border-radius: 100%;
+}
+
+#navbarPrincipal .navbar-toggler-icone {
+    background: #fff;
+    height: 3px;
+    display: block;
+}
+
+#navbarPrincipal .navbar-toggler-icone:first-child {
+    width: 30px;
+}
+
+#navbarPrincipal .navbar-toggler-icone:nth-child(2) {
+    width: 20px;
+    margin: 5px 0px;
+}
+
+#navbarPrincipal .navbar-toggler-icone:last-child {
+    width: 10px;
+}
+
+#conteudoPrincipal.condomino,
+#conteudoPrincipal.interno {
+    background: url(../images/bg.png);
+    background-attachment: fixed;
+}
+
+#conteudoPrincipal.sindico {
+    background: url(../images/bg_sindico.png);
+    background-attachment: fixed;
+}
+
+.boas-vindas {
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.saudacao {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+}
+
+#conteudoPrincipal.sindico .boas-vindas,
+#conteudoPrincipal.sindico .saudacao {
+    color: #ffffff;
+}
+
+.btn-sindico-container{
+    max-width: 100%;
+}
+
+.btn-sindico {
+    background: #003b75;
+    /* color: #fff !important; */
+    color: #0000 !important;
+    display: block;
+    text-align: center;
+    padding: 22px 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 23px 20px;
+    position: relative;
+    overflow-x: hidden;
+    width: 230px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.btn-sindico:after {
+    content: "Área do Síndico";
+    position: absolute;
+    color: #fff;
+    display: block;
+    width: 198px;
+    left: calc(50% - 99px);
+    top: calc(50% - 10px);
+}
+
+.btn-sindico:before {
+    content: "";
+    background: #04172a;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.btn-sindico:hover:before {
+    width: 100%;
+}
+
+.btn-condomino {
+    background-image: linear-gradient(to right, #384967, #435573, #4e6180, #596e8c, #657b99);
+    /* color: #fff !important; */
+    color: #0000 !important;
+    display: block;
+    text-align: center;
+    padding: 22px 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 23px 20px;
+    position: relative;
+    overflow-x: hidden;
+    width: 182px;
+    height: 50px;
+    overflow: hidden;
+    margin-right: 50px;
+}
+
+.btn-condomino:after {
+    content: "Condômino";
+    position: absolute;
+    color: #fff;
+    display: block;
+    width: 198px;
+    left: calc(50% - 99px);
+    top: calc(50% - 10px);
+}
+
+.btn-condomino:before {
+    content: "Área do Condômino";
+    background-image: linear-gradient(to right, #29354a, #303d52, #37455a, #3e4d63, #45556b);
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.btn-condomino:hover:before {
+    /* background-image: linear-gradient(to right top, #901140, #95123d, #99133a, #9d1537, #a11833); */
+    width: 100%;
+}
+
+.btn-home {
+    background-image: linear-gradient(to right, #384967, #435573, #4e6180, #596e8c, #657b99);
+    /* color: #fff !important; */
+    color: #0000 !important;
+    display: block;
+    text-align: center;
+    padding: 22px 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 23px 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.btn-home:after {
+    content: "Início";
+    position: absolute;
+    color: #fff;
+    display: block;
+    width: 198px;
+    right: calc(50% - 99px);
+    top: calc(50% - 10px);
+}
+
+.btn-home:before {
+    content: "";
+    background-image: linear-gradient(to right, #29354a, #303d52, #37455a, #3e4d63, #45556b);
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.btn-home:hover:before {
+    /* background-image: linear-gradient(to right top, #901140, #95123d, #99133a, #9d1537, #a11833); */
+    width: 100%;
+}
+
+.pra-voce .icone-titulo {
+    display: inline-block;
+}
+
+.pra-voce .titulo {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.pra-voce .titulo strong {
+    color: #f9ba5b;
+}
+
+#conteudoPrincipal.sindico .pra-voce .titulo strong {
+    color: #3b4c68;
+}
+
+.sindico .pra-voce .item .titulo-item {
+    color: #2f3242;
+    line-height: 18px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.pra-voce .item .titulo-item {
+    color: #2f3242;
+    line-height: 18px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.box-recurso {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    max-height: 250px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.box-recurso .conteudo {
+    vertical-align: middle;
+}
+
+.box-recurso .conteudo .nome {
+    color: #fff;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    height: 50px;
+}
+
+.recursosimples{
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    height: 140px;
+    border-radius: 15px;
+    margin: 7px;
+    width: 147px;
+}
+
+.recursosimples p {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    bottom: -10px;
+    line-height: 15px;
+}
+
+.box-recurso.rec-boleto {
+    background-image: url(../images/bg_boleto.png);
+}
+
+.box-recurso.rec-cndi {
+    background-image: url(../images/bg_cndi.png);
+}
+
+.box-recurso.rec-comunicados {
+    background-image: url(../images/bg_comunicados.png);
+}
+
+.box-recurso.rec-conveniencia {
+    background-image: url(../images/bg_conveniencias.png);
+}
+
+.box-recurso.rec-cotas {
+    background-image: url(../images/bg_cotas.png);
+}
+
+.box-recurso.rec-pastadigital {
+    background-image: url(../images/pd.png);
+}
+
+.box-recurso.rec-fluxo {
+    background-image: url(../images/fc.png);
+}
+
+.box-recurso.rec-historico {
+    background-image: url(../images/bg_historico.png);
+}
+
+.box-recurso.rec-procuracao {
+    background-image: url(../images/bg_procuracao.png);
+}
+
+.box-recurso.rec-classificados {
+    background-image: url(../images/bg_classificados.png);
+}
+
+.box-recurso.rec-prestacao {
+    background-image: url(../images/bg_prestacao.png);
+}
+
+.box-recurso.rec-fluxo {
+    background-image: url(../images/bg_fluxo.png);
+}
+
+.sindico .box-recurso.rec-cotas {
+    background-image: url(../images/bg_cotas_sindico.png);
+}
+
+.box-recurso.rec-sem_papel {
+    background-image: url(../images/bg_sem_papel.png);
+}
+
+.box-recurso.rec-noticias {
+    background-image: url(../images/bg_noticias.png);
+}
+
+.box-recurso.rec-comunicados {
+    background-image: url(../images/bg-comunicados.png);
+}
+
+.box-recurso.rec-enquetes {
+    background-image: url(../images/bg_enquetes.png);
+}
+
+.box-recados .box ul li {
+    margin-bottom: 10px;
+}
+
+.box-recados .box ul li .linkSessao {
+    font-size: 12px;
+}
+
+.box-recurso.rec-acordo {
+    background-image: url(../images/bg_acordos.png);
+}
+
+
+/* .box-recados {
+    background: #fff;
+    border-radius: 20px;
+    /* padding: 15px 0px; */
+
+
+}
+*/ .box-recados .header {
+    background: #fff;
+    border-radius: 20px;
+    padding: 0px 15px;
+}
+.box-recados .box {
+    padding: 0px 15px 0px 20px;
+    margin-top: 10px;
+    /* min-height: 120px; */
+    
+    height: 144px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 5px;
+}
+.box-recados ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+.box-recados ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+.box-recados ::-webkit-scrollbar-thumb {
+    background: #29364E;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+.box-recados ::-webkit-scrollbar-thumb:hover {
+    background: #29364E;
+}
+.box-recados ::-webkit-scrollbar-thumb:active {
+    background: #29364E;
+}
+.box-recados ::-webkit-scrollbar-track {
+    background: #E2E2E2;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+.box-recados ::-webkit-scrollbar-track:hover {
+    background: #E2E2E2;
+}
+.box-recados ::-webkit-scrollbar-track:active {
+    background: #E2E2E2;
+}
+.box-recados ::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.box-recados .box>strong {
+    display: none;
+}
+.box-recados .box ul {
+    padding-left: 0px;
+}
+.box-recados .box ul li a {
+    display: block;
+    background: #304261;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.box-recados .box ul li.ComunicadoExcluir a {
+    background: none;
+    color: #e69c2e;
+    font-weight: 600;
+    padding: 0px;
+    font-size: 13px;
+}
+.box-recados .box ul li.ComunicadoExcluir a img {
+    width: 10px;
+}
+.box-recados .box ul strong {
+    margin-bottom: 10px;
+}
+.box-recados .bita img,
+.box-recados .destaque img {
+    width: 54px;
+}
+.box-recados .bita .titulo,
+.box-recados .destaque .titulo {
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 600;
+    vertical-align: middle;
+    margin-bottom: 0px;
+}
+.box-recados .sindico {
+    height: 338px;
+    /* background-color: #fff; */
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-image: linear-gradient(to left, #d7953b, #e8ba65);
+    color: #fff;
+    border-radius: 15px;
+}
+.box-recados .sindico .header {
+    padding: 20px;
+    /* margin-top: 20px; */
+    /* border-top: 1px solid #d6d6d6; */
+    
+    border-radius: 20px;
+}
+#conteudoPrincipal.sindico .box-recados .sindico .header {
+    border-top: 0 solid #d6d6d6;
+    margin-top: 0px !important;
+}
+#conteudoPrincipal.sindico .box-recados .bita .header {
+    padding-top: 20px;
+    border-top: 1px solid #d6d6d6;
+    border-radius: 0px !important;
+}
+.box-recados .destaque {
+    padding-bottom: 20px;
+}
+.box-recados .destaque {
+    height: 338px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.box-recados .destaque .header {
+    padding: 20px;
+    /* border-top: 1px solid #d6d6d6; */
+    border-radius: 0px !important;
+}
+.box-recados .sindico img {
+    width: 43px;
+}
+.box-recados .sindico .titulo {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    vertical-align: middle;
+    margin-bottom: 0px;
+}
+footer {
+    background: #003b75;
+    padding: 40px 0px;
+}
+footer .logo {
+    width: 100px;
+    margin: auto;
+    display: block;
+}
+footer .logo-condopro {
+    width: 170px;
+    margin-top: 20px;
+}
+footer .ic_redes_sociais {
+    width: 25px;
+}
+footer>div:last-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.212);
+    margin-top: 30px;
+    padding-top: 30px;
+    font-size: 12px;
+}
+body>table,
+body>br {
+    display: none !important;
+}
+.recurso-sindico {
+    margin-bottom: 15px;
+}
+.recurso-sindico a {
+    display: table;
+    padding: 15px 35px;
+    background: #fff;
+    border-radius: 15px;
+    width: 100%;
+    height: 99px;
+}
+.recurso-sindico a:hover {
+    background: #f9ba5b;
+}
+.recurso-sindico a:hover img {
+    filter: brightness(200);
+}
+.recurso-sindico a:hover .nome {
+    color: #fff;
+}
+.recurso-sindico a .vertical-align {
+    display: table-cell;
+    vertical-align: middle;
+}
+.recurso-sindico img {
+    display: inline-block;
+    margin-right: 35px;
+}
+.recurso-sindico .nome {
+    margin-bottom: 0px;
+    color: #314263;
+    font-weight: 600;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.fale-habita {
+    background: #f9ba5b;
+    border-radius: 20px;
+    display: block;
+    margin-top: 15px;
+}
+.fale-habita a {
+    padding: 15px;
+}
+.fale-habita:hover {
+    background: #e69c2e;
+}
+.fale-habita img {
+    display: inline-block;
+}
+.fale-habita p {
+    display: inline-block;
+    color: #fff;
+}
+.btn-mensagens {
+    font-size: 16px !important;
+    background-color: #223048;
+    background-image: url(../images/ic_sino.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 15px center;
+    color: #fff !important;
+    padding: 12px 15px;
+    display: block;
+    text-align: center;
+}
+.pra-voce .item:first-child {
+    border: none;
+}
+.resultado-container {
+    background: #fff;
+    width: 100%;
+    border-radius: 30px;
+    padding: 20px 15px 20px 30px;
+    height: 800px;
+}
+.resultado-container .overflow-resultado {
+    overflow: auto;
+    max-height: 100%;
+    padding-right: 15px;
+}
+.btn-impressao {
+    background: #da9224;
+    padding: 10px 50px;
+    color: #fff !important;
+    border-radius: 30px;
+    float: right;
+    font-size: 16px !important;
+}
+.btn-impressao:hover {
+    background: #dc901d;
+}
+.header-relatorio {
+    vertical-align: middle;
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.dropdown-fale-com a {
+    color: #fff;
+    display: block;
+    font-weight: 100;
+    padding: 7px 18px 5px 18px;
+    border-bottom: 1px solid #da9224;
+    letter-spacing: 3px;
+    letter-spacing: 0px;
+    font-size: 15.9px;
+}
+.dropdown-fale-com a:hover {
+    background: #da9224;
+}
+.box-parceiro {
+    border-radius: 15px;
+    background: #fff;
+    width: 250px;
+    height: 220px;
+    margin: 0px auto 15px auto;
+    display: block;
+    padding: 15px;
+}
+.box-parceiro .btn-saber-mais {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    color: #fff !important;
+    border-radius: 8px;
+    margin-top: 20px;
+    background: #e8a745;
+}
+.box-parceiro .btn-saber-mais:hover {
+    background: #da9224;
+}
+.box-parceiro img {
+    margin: auto;
+    display: block;
+    width: auto !important;
+    height: 70px !important;
+}
+.box-parceiro .nome {
+    margin-top: 15px;
+    color: #000 !important;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+}
+.box-parceiro .conteudo {
+    width: 100%;
+    display: block;
+}
+.texto-conteudo p {
+    text-align: center;
+}
+#modalMimos.modal-recurso {
+    background: rgba(0, 0, 0, 0.8);
+}
+#modalMimos .modal-content {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+#modalMimos .modal-content .close span {
+    color: #fff;
+}
+#modalMimos .modal-header {
+    margin-bottom: 15px;
+}
+#modalMimos .modal-header p {
+    color: #fff;
+    font-size: 26px;
+}
+
+/* Inicio Media Queries */
+@media screen and (min-width: 375px) {
+    .btn-toggle-mobile {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+@media screen and (min-width: 576px) {
+    #navbarPrincipal .navbar-nav {
+        display: block;
+    }
+    
+    .dropdown-atendimento {
+        width: 190px;
+        display: inline-block;
+    }
+    
+    #navbarPrincipal .pesquisa-box {
+        width: calc(100% - 210px);
+        display: inline-block;
+        margin-left: 15px;
+    }
+}
+@media screen and (min-width: 768px) {
+    footer .container {
+        text-align: center;
+    }
+    
+    footer .logo {
+        text-align: center;
+        display: inline-block;
+    }
+    
+    footer .text-center p {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    footer .logo-condopro {
+        margin-top: 0px;
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    .box-parceiro {
+        width: calc(50% - 8px);
+        display: inline-block;
+    }
+    
+    #navbarPrincipal .navbar-brand {
+        margin: 0px 0px 0px 15px;
+    }
+    
+    #navbarPrincipal .pesquisa-box {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    #navbarPrincipal .dropdown-usuario {
+        width: 200px;
+    }
+    
+    #navbarPrincipal .dropdown-usuario .dropdown-toggle {
+        padding: 30px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #navbarPrincipal.sindico .dropdown-usuario .dropdown-toggle {
+        padding: 52px 30px;
+    }
+}
+@media screen and (min-width: 1199px) and (max-width: 1399px) {
+.box-recurso {
+    height: 180px;
+}
+.recursosimples {
+    height: 140px;
+    margin: 5px;
+    width: 140px;
+}
+.box-recados .sindico {
+    height: 192px !important;
+}
+}
+@media screen and (max-width: 1199px) {
+    .pra-voce {
+        background: #fff;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        overflow-x: hidden;
+        width: 0px;
+        transition: width 0.5s ease-in-out;
+        z-index: 20;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .btn-sindico {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .pra-voce.aberto {
+        width: 240px;
+    }
+    
+    .pra-voce .item {
+        width: 240px;
+        border: none;
+    }
+    
+    .pra-voce .item .card-header {
+        background: none;
+    }
+    
+    .pra-voce .item .card-header button {
+        text-decoration: none;
+    }
+    
+    .pra-voce .item .card-header button img {
+        width: 30px;
+    }
+    
+    .backdrop {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+    }
+    
+    .btn-toggle-mobile {
+        background: #e0a64e !important;
+        padding: 15px 10px;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        z-index: 20;
+        border-radius: 100%;
+    }
+    
+    .btn-toggle-mobile.sindico {
+        background-image: linear-gradient(to right, #384967, #435573, #4d6280, #596f8c, #647c99) !important;
+    }
+    
+    .btn-toggle-mobile>div {
+        background: #fff;
+        width: 100%;
+        height: 3px;
+        border-radius: 40px;
+        position: relative;
+        animation-play-state: paused;
+    }
+    
+    .btn-toggle-mobile.click1>div,
+    .btn-toggle-mobile.click2>div {
+        animation-play-state: running;
+    }
+    
+    .btn-toggle-mobile>div:nth-child(1) {
+        animation-name: icon-change-first;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+    
+    .btn-toggle-mobile.click2>div:nth-child(1) {
+        animation-name: icon-change-first-reverse;
+    }
+    
+    .btn-toggle-mobile>div:nth-child(2) {
+        margin: 5px 0px;
+        animation-name: icon-change-middle;
+        animation-duration: 250ms;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+    
+    .btn-toggle-mobile.click2>div:nth-child(2) {
+        animation-name: icon-change-middle-reverse;
+    }
+    
+    .btn-toggle-mobile>div:nth-child(3) {
+        animation-name: icon-change-last;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+    
+    .btn-toggle-mobile.click2>div:nth-child(3) {
+        animation-name: icon-change-last-reverse;
+    }
+    
+    @keyframes icon-change-first {
+        50% {
+            transform: translateY(8px);
+            top: 0;
+        }
+        100% {
+            transform: rotate(45deg);
+            top: 8px;
+        }
+    }
+    
+    @keyframes icon-change-first-reverse {
+        0% {
+            transform: rotate(45deg);
+            top: 8px;
+        }
+        50% {
+            transform: rotate(0deg);
+            top: 8px;
+        }
+        100% {
+            transform: translateY(0px);
+            top: 0;
+        }
+    }
+    
+    @keyframes icon-change-middle {
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes icon-change-middle-reverse {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes icon-change-last {
+        50% {
+            transform: translateY(-8px);
+            top: 0;
+        }
+        100% {
+            transform: rotate(-45deg);
+            top: -8px;
+        }
+    }
+    
+    @keyframes icon-change-last-reverse {
+        0% {
+            transform: rotate(-45deg);
+            top: -8px;
+        }
+        50% {
+            transform: rotate(0deg);
+            top: -8px;
+        }
+        100% {
+            transform: translateY(0px);
+            top: 0;
+        }
+    }
+    
+    .collapse .card-body li a,
+    .collapsing .card-body li a {
+        display: block;
+        color: #000;
+    }
+    
+    #menu-full .card-body {
+        padding: 0px !important;
+    }
+    
+    #menu-full .card-body li {
+        padding: 10px 20px !important;
+        line-height: 16px;
+    }
+    
+    #menu-full .card-body li:nth-of-type(even) {
+        background: #e6e6e6;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .pra-voce .item .btn-group,
+    .pra-voce .item .btn-group button {
+        width: 100%;
+    }
+    
+    .pra-voce .dropdown-item {
+        color: #fff;
+    }
+    
+    .pra-voce .dropdown-item:focus,
+    .pra-voce .dropdown-item:hover {
+        background: #A32034;
+    }
+    
+    .pra-voce.sindico .dropdown-item:focus,
+    .pra-voce.sindico .dropdown-item:hover {
+        background: #101723;
+    }
+    
+    .pra-voce .item .btn-group .dropdown-toggle {
+        text-align: left;
+        border: none;
+        background: none;
+        padding: 12px;
+    }
+    
+    .pra-voce .item .btn-group .dropdown-toggle::after {
+        display: none;
+    }
+    
+    .rec-nav-solicita #dropdownMenu1+.dropdown-menu li .dropdown-menu {
+        background: #101723;
+        margin-top: 0px;
+        border-radius: 0px;
+        top: 0px;
+        left: 218px;
+    }
+    
+    .pra-voce .item .btn-group button[aria-expanded="true"] {
+        background: #F54255;
+    }
+    
+    .pra-voce.sindico .item .btn-group button[aria-expanded="true"] {
+        background: #223048;
+    }
+    
+    .pra-voce.sindico .item .btn-group button[aria-expanded="true"] img {
+        filter: brightness(100);
+    }
+    
+    .pra-voce .item .btn-group button[aria-expanded="true"] * {
+        color: #fff;
+    }
+    
+    .box-recados .destaque {
+        padding-bottom: 0px;
+    }
+    
+    .box-recados .header img {
+        width: 31px;
+    }
+    
+    .box-recados .header img+.titulo {
+        font-size: 18px;
+    }
+    
+    .box-recados .bita .header img+.titulo,
+    .box-recados .sindico .header img+.titulo {
+        width: 100px;
+    }
+    
+    .pra-voce .item .titulo-item.modal-label {
+        width: calc(100% - 60px);
+    }
+    
+    .rec-nav-solicita #dropdownMenu1+.dropdown-menu>li>a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .rec-nav-solicita #dropdownMenu1+.dropdown-menu {
+        padding-top: 0px;
+    }
+    
+    .box-parceiro {
+        /* margin-bottom: 0px; */
+        margin-right: 8px;
+    }
+    
+    .box-parceiro:nth-of-type(2n) {
+        margin-right: 0px;
+    }
+    
+    .resultado-container {
+        min-height: 68.9vh;
+    }
+    
+    .box-recados {
+        height: calc(100% - 15px);
+    }
+    /* .sindico .box-recados {
+        height: calc(100% - 104px);
+    } */
+    
+    footer {
+        background: #003b75;
+        padding: 40px 0px;
+    }
+    
+    .loading .content {
+        left: calc(50% - 65px);
+        top: calc(50% - 65px);
+    }
+    
+    .loading img {
+        width: 130px;
+    }
+    
+    .loading p {
+        font-size: 30px;
+        width: 210px;
+        margin-left: 10px !important;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    
+    #navbarPrincipal .pesquisa-box {
+        width: 218px;
+    }
+    
+    #navbarPrincipal.sindico .pesquisa-box {
+        width: 284px;
+    }
+    
+    .typeahead {
+        height: 48px;
+    }
+    
+    #navbarPrincipal .dropdown-atendimento .dropdown-toggle {
+        padding: 11px 20px;
+    }
+    
+    #navbarPrincipal .dropdown-usuario {
+        width: 260px;
+    }
+    
+    #navbarPrincipal .dropdown-usuario .dropdown-toggle {
+        padding: 40px 40px 40px 15px;
+        position: relative;
+    }
+    
+    #navbarPrincipal .dropdown-usuario .dropdown-toggle::after {
+        position: absolute;
+        right: 20px;
+        top: calc(50% - 2.4px);
+    }
+    
+    .pra-voce {
+        background: #fff;
+        border-radius: 20px;
+    }
+    
+    .pra-voce .item.chama-modal,
+    .pra-voce .item.logo {
+        padding: 15px;
+    }
+    
+    .pra-voce .item {
+        border-top: 1px solid #00000020;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    .pra-voce.sindico .item .dropdown-menu {
+        background: #223048;
+    }
+    
+    .pra-voce .item .dropdown-menu {
+        width: 234.5px;
+        border: 0px;
+        border-radius: 0px;
+        margin: 0px;
+        background: #F54255;
+    }
+    
+    .pra-voce .item img {
+        max-height: 30px;
+    }
+    
+    .pra-voce .item.logo img {
+        max-height: 37px;
+    }
+    
+    .dropdown-atendimento {
+        width: 172px;
+        text-align: right;
+        margin-right: -80px;
+        margin-left: 90px;
+    }
+    
+    .dropdown-atendimento.sindico {
+        width: 182px;
+        text-align: left;
+        margin-top: 0 !important;
+    }
+    
+    #navbarPrincipal .navbar-nav {
+        /* margin-right: 11%; */
+        display: flex;
+        margin-top: 0px;
+    }
+    
+    #navbarPrincipal .navbar-brand {
+        margin: 0px 0px 0px 16px;
+    }
+    
+    #navbarPrincipal .pesquisa-box {
+        margin-left: 20px;
+    }
+    
+    .box-recurso {
+        background-size: 150%;
+        transition: all 0.15s ease-in;
+    }
+    
+    .box-recurso:hover {
+        background-size: 160%;
+    }
+    /* Modais Recursos */
+    
+    .modal-recurso {
+        background: rgba(0, 0, 0, 0.85);
+    }
+    
+    .modal-recurso * {
+        color: #fff !important;
+    }
+    
+    .modal-recurso .close {
+        position: absolute;
+        top: -10px;
+        right: -20px;
+    }
+    
+    .modal-recurso .modal-body {
+        padding: 100px 40px 100px 80px !important
+    }
+    
+    #modalMimos.modal-recurso .modal-body {
+        padding: 40px !important
+    }
+    
+    .modal-recurso .modal-content {
+        border-radius: 30px;
+        background: transparent;
+        border: 1px solid #fff;
+    }
+    
+    .modal-recurso .modal-titulo {
+        display: inline-block;
+        background: #fff;
+        border-radius: 35px;
+        padding: 35px;
+        position: absolute;
+        top: calc(50% - 66px);
+        left: -62px;
+    }
+    
+    .modal-recurso .modal-titulo img {
+        width: 55px;
+    }
+    
+    .modal-recurso .conteudo li {
+        display: inline-block;
+        width: 49%;
+        line-height: 50px;
+        position: relative;
+    }
+    
+    .modal-recurso .conteudo li::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 2px solid #fff;
+        bottom: 3px;
+        position: absolute;
+        transition: all 0.2s ease-in-out;
+        top: 0px;
+        left: -10px;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .modal-recurso .conteudo li:hover::after {
+        animation-name: growSelect;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        z-index: 10;
+    }
+    
+    .modal-recurso .conteudo li a {
+        display: block;
+        position: relative;
+        z-index: 50;
+    }
+    
+    @keyframes growSelect {
+        0% {
+            transform: scale(1.1);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    .btn-mensagens {
+        text-align: right;
+    }
+    
+    #modalOpcoes .conteudo {
+        max-height: 447px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-left: 0px;
+    }
+    
+    #modalOpcoes ::-webkit-scrollbar {
+        width: 7px;
+        height: 11px;
+    }
+    
+    #modalOpcoes ::-webkit-scrollbar-button {
+        width: 0px;
+        height: 0px;
+    }
+    
+    #modalOpcoes ::-webkit-scrollbar-thumb {
+        background: #f9ba5b;
+        border: 0px none #ffffff;
+        border-radius: 50px;
+    }
+    
+    #modalOpcoes ::-webkit-scrollbar-thumb:hover {
+        background: #f9ba5b;
+    }
+    
+    #modalOpcoes ::-webkit-scrollbar-thumb:active {
+        background: #f9ba5b;
+    }
+    
+    #modalOpcoes ::-webkit-scrollbar-track {
+        background: transparent;
+        border: 0px none #ffffff;
+        border-radius: 50px;
+    }
+    
+    #modalOpcoes ::-webkit-scrollbar-track:hover {
+        background: transparent;
+    }
+    
+    #modalOpcoes ::-webkit-scrollbar-track:active {
+        background: transparent;
+    }
+    
+    #modalOpcoes ::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+    
+    #modalOpcoes .modal-body {
+        padding: 40px 40px 40px 80px !important;
+    }
+    
+    #modalOpcoes .modal-dialog {
+        max-width: 90vw;
+    }
+    
+    #modalOpcoes .conteudo .listas {
+        width: 13.2%;
+        display: inline-block;
+        float: left;
+        margin-right: 13px;
+    }
+    
+    #modalOpcoes .conteudo>div:last-of-type {
+        margin-right: 0px;
+    }
+    
+    #modalOpcoes .conteudo .titulo {
+        font-size: 16px;
+        font-weight: bold;
+        color: #f9ba5b !important;
+    }
+    
+    #modalOpcoes .conteudo .listas li {
+        width: 100%;
+    }
+    
+    #modalOpcoes .conteudo .listas li a {
+        line-height: 19px;
+        font-size: 14px;
+        margin-bottom: 11px;
+        width: 98%;
+    }
+    
+    #modalOpcoes .conteudo li::after {
+        height: 100% !important;
+        top: -5px !important;
+    }
+}
+@media screen and (max-width: 320px) {
+    .recursosimples {
+        width: 300px !important;
+    }
+    #navbarPrincipal .dropdown-atendimento .dropdown-toggle {
+        width: 134% !important;;
+}
+}
+@media screen and (max-width: 600px) {
+#navbarPrincipal .dropdown-atendimento .dropdown-toggle {
+    background: #da9224;
+    border-radius: 0px;
+    border-color: #da9224;
+    color: #fff;
+    padding: 10px 20px;
+    width: 125%;
+    display: block;
+    border-radius: 3px;
+    transition: all 0.4s;
+}
+
+    ul.navbar-nav{
+        margin-top: 140px;
+    }
+
+    #navbarPrincipal .navbar-brand {
+        background: white;
+        width: 100%;
+        height: 140px;
+        position: absolute;
+        top: 0px;
+        border-radius: 0px 0px 20px 20px;
+        text-align: center;
+    }
+    .box-recurso .conteudo {
+        vertical-align: middle;
+        padding: 40px;
+    }
+    .recursosimples {
+        text-align: center;
+        background: #fff;
+        padding: 20px;
+        height: 140px;
+        border-radius: 15px;
+        margin: 0px 0px 20px 10px;
+        width: 180px;
+    }
+    .texto-conteudo p img {
+        width: 100% !important;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+    .btn-condomino:after {
+        content: "Condômino";
+    }
+    
+    .sindico .box-recurso {
+        background-size: 290%;
+    }
+    
+    .btn-mensagens {
+        text-align: right;
+        font-size: 13px !important;
+    }
+    
+    .rec-nav-solicita #dropdownMenu1 {
+        background: #223048;
+        padding: 9px 10px;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .rec-nav-solicita {
+        margin-right: 25px;
+    }
+    
+    #navbarPrincipal .pesquisa-box {
+        width: 288px;
+        /* margin-left: 80px; */
+    }
+    
+    .condomino .btn-mensagens {
+        margin-left: 20px;
+        padding-left: 45px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
+    .pra-voce .item .titulo-item {
+        margin-left: 5px;
+        margin-top: 0px;
+        font-size: 14px;
+        width: calc(100% - 60px);
+    }
+    
+    .recurso-sindico {
+        max-height: 107px;
+        margin-bottom: 7px;
+    }
+    
+    .pra-voce .item .btn-group .dropdown-toggle {
+        text-align: left;
+        border: none;
+        background: none;
+        padding: 14px 14px;
+    }
+    
+    .sindico .pra-voce .item .btn-group .dropdown-toggle {
+        text-align: left;
+        border: none;
+        background: none;
+        padding: 15px 15px;
+    }
+    
+    .pra-voce .item:first-child {
+        padding: 15px;
+    }
+    
+    .pra-voce .item {
+        /* padding: 20px 15px 20px 15px; */
+    }
+    
+    /* .box-recurso {
+        height: 313px;
+        
+    } */
+    
+    .icon-conteudo.comunicados {
+        transform: rotate(-45deg) scale(0.8);
+    }
+    
+    .icon-conteudo {
+        transform: scale(0.8);
+    }
+    
+    .box-recurso .conteudo .nome {
+        margin-top: 0px;
+    }
+    
+    .box-recurso .conteudo .comunicados+.nome {
+        margin-top: 10px !important;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1763px) {
+    .recurso-sindico a {
+        padding: 15px;
+        height: 101px;
+        /* height: 93px; */
+    }
+    
+    .recurso-sindico .nome {
+        font-size: 14px;
+        width: 126px;
+    }
+    
+    .recurso-sindico img {
+        margin-right: 5px;
+    }
+}
+@media screen and (min-width: 1900px) {
+    .recurso-sindico a {
+        padding: 16px 30px !important;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1900px) {
+    .sindico .box-recurso {
+        background-size: 250%;
+    }
+}
+@media screen and (max-width: 1499px) {
+    .box-recurso {
+        background-size: 179%;
+    }
+    
+    .box-recurso:hover {
+        background-size: 185%;
+    }
+    
+    #conteudoPrincipal.sindico .box-recurso:hover {
+        background-size: 280% !important;
+    }
+}
+@media screen and (min-width: 1500px) {
+    #conteudoPrincipal {
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+    }
+    
+    #navbarPrincipal .navbar-brand {
+        margin: 0px 0px 0px 46px;
+    }
+    
+    .rec-nav-solicita #dropdownMenu1 {
+        background: #223048;
+        padding: 12px 45px;
+    }
+    
+    #conteudoPrincipal {
+        padding-top: 40px !important;
+        padding-bottom: 60px !important;
+    }
+    
+    
+    .box-recurso {
+        height: 222px;
+        /* height: 287px; */
+    }
+    
+    .box-recurso {
+        background-size: 200%;
+        transition: background 0.8s ease-in-out;
+    }
+    
+    .box-recados .bita .titulo {
+        width: calc(100% - 59px);
+    }
+    
+    .box-recurso:hover {
+        background-size: 260%;
+    }
+    
+    .box-recados .titulo {
+        width: calc(100% - 48px);
+    }
+    
+    .boas-vindas {
+        font-size: 22px;
+    }
+    
+    .saudacao {
+        font-size: 20px;
+    }
+    
+    .icon-conteudo {
+        transform: scale(0.75);
+    }
+    
+    .icon-conteudo.comunicados {
+        transform: rotate(-45deg) scale(0.75);
+    }
+    
+    .box-recurso .conteudo .nome {
+        margin-top: 0px;
+    }
+    
+    .box-recurso .conteudo .comunicados+.nome {
+        margin-top: 10px;
+    }
+    
+    .recurso-sindico a {
+        /* height: 85px; */
+        height: 100px;
+        padding-left: 35px;
+    }
+}
+@media screen and (min-width: 1685px) {
+    #navbarPrincipal .pesquisa-box {
+        margin-left: 360px;
+    }
+}
+@media screen and (min-width: 1703px) {
+    .recurso-sindico a {
+        height: 101px;
+        padding-left: 35px;
+    }
+    
+    .sindico .pra-voce .item .btn-group .dropdown-toggle {
+        text-align: left;
+        border: none;
+        background: none;
+        padding: 11.2px 12px;
+    }
+    
+    .pra-voce .item .btn-group .dropdown-toggle {
+        text-align: left;
+        border: none;
+        background: none;
+        padding: 16.5px 12px;
+    }
+    
+    .box-recurso {
+        height: 328px;
+    }
+    
+    .box-recados .sindico {
+        height: 336px;
+        background-color: #fff;
+        margin-bottom: 0px;
+        border-radius: 15px 15px 0 0;
+        border-bottom: 1px solid rgb(146, 146, 146);
+    }
+    
+    .box-recados .destaque {
+        height: 336px;
+        background-color: #fff;
+        border-radius: 0px 0px 15px 15px;
+    }
+}
+@media screen and (min-width: 1500px) and (max-width: 1702px) {
+    .pra-voce .item .btn-group .dropdown-toggle {
+        text-align: left;
+        border: none;
+        background: none;
+        padding: 15.8px 12px !important;
+    }
+    
+    .sindico .pra-voce .item .btn-group .dropdown-toggle {
+        text-align: left;
+        border: none;
+        background: none;
+        padding: 10px 12px !important;
+    }
+    
+    .fale-habita {
+        padding: 25px 15px;
+        text-align: center;
+    }
+    
+    .fale-habita img {
+        display: none;
+    }
+    
+    .fale-habita p {
+        margin-bottom: 0px;
+    }
+    
+    .box-recados .sindico {
+        height: 222px;
+        background-color: #fff;
+        margin-bottom: 10px;
+        border-radius: 15px 15px;
+        border-bottom: 1px solid #9e9e9e;
+    }
+    
+    .box-recados .destaque {
+        height: 322px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        border-radius: 15px 15px;
+    }
+}
+@media screen and (min-width: 1800px) {
+    .sindico .rec-nav-solicita #dropdownMenu1 {
+        background: #223048;
+        padding: 16px 15px;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        width: 230px;
+    }
+    
+    .sindico .btn-mensagens {
+        font-size: 16px !important;
+        background-color: #223048;
+        background-image: url(../images/ic_sino.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: 15px center;
+        color: #fff !important;
+        padding: 15px 15px;
+        display: block;
+        text-align: center;
+        width: 200px;
+    }
+    
+    .recurso-sindico a {
+        /* height: 85px; */
+        height: 98px;
+        padding-left: 35px;
+    }
+    
+    #navbarPrincipal .navbar-nav {
+        margin-right: 19%;
+    }
+    
+    .pra-voce .item:first-child {
+        padding: 30px 20px 20px 20px;
+    }
+    
+    .pra-voce .item {
+        padding: 0.4px 15px;
+    }
+    
+    .box-recados .sindico {
+        height: 345px;
+        background-color: #fff;
+        margin-bottom: 10px;
+        border-radius: 15px 15px;
+        border-bottom: 1px solid rgb(146, 146, 146);
+    }
+    
+    .box-recados .destaque {
+        height: 345px;
+        background-color: #fff;
+        border-radius: 15px 15px;
+        margin-bottom: 10px;
+    }
+    
+    .box-recados .titulo {
+        width: inherit;
+        margin-left: 5px;
+        font-size: 18px !important;
+    }
+    
+    .box-recurso {
+        height: 340px;
+    }
+    
+    .box-recados .box {
+        height: 230px;
+        max-height: 248px;
+    }
+    
+    #modalOpcoes .conteudo {
+        max-height: 700px;
+    }
+}
+@media screen and (min-width: 1864px) {
+    .box-recados .box {
+        height: 230px;
+        max-height: 268px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .condomino .btn-mensagens {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 1499px) {
+    .box-recados .sindico {
+        height: 322px;
+        background-color: #fff;
+        margin-bottom: 10px;
+        border-radius: 15px 15px;
+        border-bottom: 1px solid #9e9e9e;
+    }
+    
+    .box-recados .destaque {
+        height: 275px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        border-radius: 15px 15px;
+    }
+}
+@media screen and (min-width: 1900px) {
+    .box-recados .titulo {
+        font-size: 18px !important;
+    }
+    
+    .recurso-sindico a {
+        height: 103px;
+    }
+    
+    .sindico .box-recados .box {
+        height: 208px !important;
+        max-height: 208px !important;
+    }
+    
+    .sindico .box-recados {
+        height: calc(100% - 114px);
+    }
+    
+    .pesquisa-box {
+        width: 328px;
+        margin-left: 320px;
+    }
+}
+.rec-nav-solicita #dropdownMenu1 {
+    background: #223048;
+    padding: 12px 15px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+.dropdown-atendimento.sindico {
+    margin-top: 15px;
+}
+.rec-nav-solicita #dropdownMenu1+.dropdown-menu {
+    background: #223048;
+    margin-top: 0;
+    border: none !important;
+    border-radius: 0px;
+    width: 100%;
+}
+.rec-nav-solicita #dropdownMenu1+.dropdown-menu li {
+    background: none !important;
+}
+.rec-nav-solicita #dropdownMenu1+.dropdown-menu li .dropdown-menu {
+    background: #101723;
+    margin-top: 0px;
+    border-radius: 0px;
+}
+.rec-nav-solicita #dropdownMenu1+.dropdown-menu li a {
+    color: #fff;
+}
+.rec-nav-solicita #dropdownMenu1+.dropdown-menu li a:hover,
+.rec-nav-solicita #dropdownMenu1+.dropdown-menu li a:active,
+.rec-nav-solicita #dropdownMenu1+.dropdown-menu li a:focus {
+    background: #101723;
+}
+.box-convite button {
+    width: 13% !important;
+}
+.box-convite input.box-email {
+    width: 85% !important;
+}
+
+.Inativo {
+    background-image: url(../images/icone-inativo.png);
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-color: transparent;
+}
+.liTitulo {
+    display: none !important;
+}
+.condomino .container-fluid {
+    text-align: center;
+}
+
+.condomino .container-fluid span {
+    color: #fff;
+}
+
+.condomino .container-fluid a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.condomino .container-fluid a:hover {
+    text-decoration: underline !important;
+}
+
+.listaTipo span {
+    padding-left:11px !important;
+}
+#btn_Consultar {
+    background: #da9224;
+    padding: 10px 26px !important;
+    border-radius: 19px !important;
+    color: #fff  !important;
+    font-size: 16px  !important;
+    font-weight: 600  !important;
+}

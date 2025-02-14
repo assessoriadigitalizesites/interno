@@ -1,0 +1,667 @@
+.box-recurso img{
+    width: 55px;
+}
+
+.icon-conteudo{
+    position: relative;
+    text-align: center;
+    width: 70px;
+    margin: auto;
+}
+
+/* BOLETO */
+
+.icon-conteudo.boleto .listras div:not(.double){
+    width: 4px;
+    height: 23px;
+    background: #e22a46;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 0px;
+}
+
+.icon-conteudo.boleto .listras{
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 17px);
+    left: calc(50% - 18.75px);
+    overflow: hidden;
+    padding-top: 6px;
+}
+
+.icon-conteudo.boleto .listras .double{
+    display: inline-block;
+}
+
+.icon-conteudo.boleto .listras .double div{
+    display: block;
+}
+
+.icon-conteudo.boleto .listras > div:nth-child(2) div:nth-child(1){
+    height: 7px;
+    margin-bottom: 4px;
+}
+
+.icon-conteudo.boleto .listras > div:nth-child(2) div:nth-child(2){
+    height: 12px;
+}
+
+.icon-conteudo.boleto .listras > div:nth-child(4) div:nth-child(1){
+    height: 12px;
+    margin-bottom: 4px;
+}
+
+.icon-conteudo.boleto .listras > div:nth-child(4) div:nth-child(2){
+    height: 7px;
+}
+
+.box-recurso:hover .icon-conteudo.boleto .listras > div:nth-child(odd){
+    animation-name: barraDeCimaBoleto;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+.box-recurso:hover .icon-conteudo.boleto .listras > div:nth-child(even){
+    animation-name: barraDeBaixoBoleto;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+
+@keyframes barraDeCimaBoleto{
+    0%{
+        transform: translateY(-60px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes barraDeBaixoBoleto{
+    0%{
+        transform: translateY(60px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* CNDI */
+
+.icon-conteudo.cndi .barras div{
+    width: 6px;
+    height: 23px;
+    background: #e22a46;
+    display: inline-block;
+    margin-right: 0px;
+    border-radius: 1px;
+}
+
+.icon-conteudo.cndi .barras{
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 17px);
+    left: calc(50% - 18px);
+    overflow: hidden;
+    padding-top: 6px;
+}
+
+.box-recurso .icon-conteudo.cndi .barras > div:nth-child(1){
+    max-height: 10px;
+}
+
+.box-recurso .icon-conteudo.cndi .barras > div:nth-child(2){
+    max-height: 20px !important;
+}
+
+.box-recurso .icon-conteudo.cndi .barras > div:nth-child(3){
+    max-height: 15px !important;
+}
+
+.box-recurso .icon-conteudo.cndi .barras > div:nth-child(4){
+    max-height: 46px !important;
+}
+
+.box-recurso:hover .icon-conteudo.cndi .barras > div:nth-child(2n + 1){
+    animation-name: barraSobeGrafico;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+.box-recurso:hover .icon-conteudo.cndi .barras > div:nth-child(2){
+    animation-name: barraDesceGrafico;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes barraSobeGrafico{
+    50%{
+        max-height: 23px;
+    }
+}
+
+@keyframes barraDesceGrafico{
+    50%{
+        max-height: 10px;
+    }
+}
+
+/* CALENDARIO */
+.icon-conteudo.calendario .ponteiro-horas,.icon-conteudo.calendario .ponteiro-minutos, .icon-conteudo.calendario .meio{
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    right: 8px;
+    overflow: hidden;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    transform: rotate(1deg);
+}
+
+.icon-conteudo.calendario .ponteiro-horas::after{
+    content: '';
+    background: #e22a46;
+    display: block;
+    width: 2px;
+    height: 6px;
+    position: absolute;
+    left: calc(50% - 1px);
+    top: calc(50% - 6px);
+    border-radius: 5px;
+}
+
+.icon-conteudo.calendario .meio::after{
+    content: '';
+    background: #e22a46;
+    display: block;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    left: calc(50% - 1px);
+    top: calc(50% - 1px);
+    border-radius: 5px;
+}
+
+.icon-conteudo.calendario .ponteiro-minutos::after{
+    content: '';
+    background: #e22a46;
+    display: block;
+    height: 2px;
+    width: 4px;
+    position: absolute;
+    left: calc(50% - 0px);
+    top: calc(50% - 1px);
+    border-radius: 5px;
+}
+
+.box-recurso:hover .icon-conteudo.calendario .ponteiro-horas {
+    animation-name: ponteiroHoras;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.box-recurso:hover .icon-conteudo.calendario .ponteiro-minutos {
+    animation-name: ponteiroMinutos;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ponteiroHoras{
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes ponteiroMinutos{
+    100%{
+        transform: rotate(720deg);
+    }
+}
+
+/* DOCUMENTO */
+.icon-conteudo.classificado .traco1{
+    text-align: center;
+    position: absolute;
+    top: -3px;
+    left: 20px;
+    overflow: hidden;
+    padding-top: 6px;
+    width: 3px;
+    height: 10px;
+    background: #e22a46;
+}
+
+.icon-conteudo.classificado .traco2{
+    text-align: center;
+    position: absolute;
+    top: 11px;
+    left: 5px;
+    overflow: hidden;
+    width: 10px;
+    height: 3px;
+    background: #e22a46;
+}
+
+.box-recurso:hover .icon-conteudo.classificado .traco1 {
+    animation-name: traco1Classificados;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.box-recurso:hover .icon-conteudo.classificado .traco2 {
+    animation-name: traco2Classificados;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes traco1Classificados{
+    0%{
+        transform: translateY(25px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes traco2Classificados{
+    0%{
+        transform: translateX(25px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* COUNICADOS */
+.icon-conteudo.comunicados {
+    transform: rotate(-45deg);
+}
+.icon-conteudo.comunicados .risco1{
+    text-align: center;
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    overflow: hidden;
+    padding-top: 6px;
+    width: 4px;
+    height: 9px;
+    background: #e22a46;
+    border-radius: 50px;
+    transform: rotate(45deg);
+}
+
+.icon-conteudo.comunicados .risco2{
+    text-align: center;
+    position: absolute;
+    top: 17px;
+    right: -3px;
+    overflow: hidden;
+    height: 4px;
+    width: 11px;
+    background: #e22a46;
+    border-radius: 50px;
+}
+
+.icon-conteudo.comunicados .risco3{
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
+    overflow: hidden;
+    padding-top: 6px;
+    width: 4px;
+    height: 9px;
+    background: #e22a46;
+    border-radius: 50px;
+    transform: rotate(-45deg) !important;
+}
+
+.box-recurso:hover .icon-conteudo.comunicados .risco1 {
+    animation-name: traco1comunicados;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.box-recurso:hover .icon-conteudo.comunicados .risco2 {
+    animation-name: traco2comunicados;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.box-recurso:hover .icon-conteudo.comunicados .risco3 {
+    animation-name: traco3comunicados;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes traco1comunicados{
+    0%{
+        top: 30px;
+        right: 100px;
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 0;
+    }
+    
+    100%{
+        top: 2px;
+        right: 7px;
+        opacity: 1;
+    }
+}
+
+@keyframes traco2comunicados{
+    0%{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes traco3comunicados{
+    0%{
+        right: 100px;
+        bottom: 50px;
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 0;
+    }
+    
+    100%{
+        bottom: 5px;
+        right: 7px;
+        opacity: 1;
+    }
+}
+
+/* CONVENIENCIAS */
+.box-recurso:hover .icon-conteudo.conveniencias img{
+    animation-name: conveniencias;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes conveniencias{
+    0%{
+        transform: scale(1.1);
+    }
+
+    25%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* Cotas */
+
+.icon-conteudo.cotas .traco1{
+    text-align: center;
+    position: absolute;
+    top: 28px;
+    left: 19px;
+    overflow: hidden;
+    width: 6px;
+    height: 15px;
+    /* background: #000; */
+    transform: rotate(-37deg);
+}
+
+.icon-conteudo.cotas .traco1::before, .icon-conteudo.cotas .traco2::before, .icon-conteudo.cotas .traco3::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ff2645;
+}
+
+.icon-conteudo.cotas.sindico .traco1::before, .icon-conteudo.cotas.sindico .traco2::before, .icon-conteudo.cotas.sindico .traco3::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #7eabd5;
+}
+
+.icon-conteudo.cotas .traco2{
+    transform: rotate(360deg);
+}
+
+.icon-conteudo.cotas .traco2{
+    text-align: center;
+    position: absolute;
+    top: 14px;
+    left: 33px;
+    overflow: hidden;
+    width: 6px;
+    height: 30px;
+    background: transparent;
+    transform: rotate(200deg);
+}
+
+.icon-conteudo.cotas .traco3{
+    text-align: center;
+    position: absolute;
+    top: 14px;
+    left: 46px;
+    overflow: hidden;
+    width: 6px;
+    height: 9px;
+    background: transparent;
+    transform: rotate(-44deg);
+}
+
+.box-recurso:hover .icon-conteudo.cotas .traco1::before{
+    animation-name: tracosCotas;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.box-recurso:hover .icon-conteudo.cotas .traco2::before{
+    animation-name: tracosCotas;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 0.4s;
+    height: 0%;
+}
+.box-recurso:hover .icon-conteudo.cotas .traco3::before{
+    animation-name: tracosCotas;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 0.8s;
+    height: 0%;
+}
+
+@keyframes tracosCotas{
+    0%{
+        height: 0%;
+    }
+
+    100%{
+        height: 100%;
+    }
+}
+
+/* Procuracao */
+.box-recurso:hover .icon-conteudo.procuracao img{
+    animation-name: procuracao;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes procuracao{
+    100%{
+        transform: rotate(360deg) translateX(-1px);
+    }
+}
+
+/* Prestacao */
+
+.box-recurso .icon-conteudo.prestacao img:last-child{
+    position: absolute;
+    left: calc(50% - 26px);
+}
+
+.box-recurso:hover .icon-conteudo.prestacao img:last-child{
+    animation-name: prestacao;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes prestacao{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Acordos */
+
+.box-recurso:hover .icon-conteudo.acordos{
+    animation-name: acordos;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+@keyframes acordos{
+    0%{
+        transform: scale(0.75) translateY(0px);
+    }
+    
+    50%{
+        transform: scale(0.75) translateY(-10px);
+    }
+
+    100%{
+        transform: scale(0.75) translateY(0px);
+    }
+}
+
+/* Cotas Pendentes*/
+
+.icon-conteudo.cotas-pendentes .risco1{
+    text-align: center;
+    position: absolute;
+    top: 13px;
+    left: 42.5px;
+    overflow: hidden;
+    width: 3px;
+    height: 8px;
+    background: #7eabd5;
+    border-radius: 30px;
+}
+
+.box-recurso:hover .icon-conteudo.cotas-pendentes .risco1{
+    animation-name: riscoCotas1;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.icon-conteudo.cotas-pendentes .risco2{
+    text-align: center;
+    position: absolute;
+    top: 9px;
+    left: 49.6px;
+    overflow: hidden;
+    width: 3px;
+    height: 12px;
+    background: #7eabd5;
+    border-radius: 30px;
+}
+
+.box-recurso:hover .icon-conteudo.cotas-pendentes .risco2{
+    animation-name: riscoCotas2;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.icon-conteudo.cotas-pendentes .risco3{
+    text-align: center;
+    position: absolute;
+    top: 6px;
+    left: 57px;
+    overflow: hidden;
+    width: 3px;
+    height: 15px;
+    background: #7eabd5;
+    border-radius: 30px;
+}
+
+.box-recurso:hover .icon-conteudo.cotas-pendentes .risco3{
+    animation-name: riscoCotas3;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes riscoCotas1{
+    0%{
+        height: 0px;
+        top: 20px;
+    }
+
+    100%{
+        height: 8px;
+        top: 13px;
+    }
+}
+
+@keyframes riscoCotas2{
+    0%{
+        height: 0px;
+        top: 20px;
+    }
+
+    100%{
+        height: 12px;
+        top: 9px;
+    }
+}
+
+
+@keyframes riscoCotas3{
+    0%{
+        height: 0px;
+        top: 20px;
+    }
+
+    100%{
+        height: 15px;
+        top: 6px;
+    }
+}
