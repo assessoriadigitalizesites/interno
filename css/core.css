@@ -268,7 +268,7 @@ body {
 
 .banner-btn {
   display: block;
-  border: 0;
+  border: 3px solid white;
   font-family: Baloo-Regular;
   text-transform: uppercase;
   padding: 14px 50px 14px 30px;
