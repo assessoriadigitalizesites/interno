@@ -278,7 +278,7 @@ body {
   cursor: pointer;
   transition: all 0.2s linear;
   background-color: #229A00;
-  background-image: url("../img/icon-right.svg");
+  background-image: url("");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: calc(100% - 10px);
