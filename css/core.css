@@ -1152,7 +1152,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: #9ebee6ab;
+  background: #FFF;
   animation: layerTr 1s linear infinite alternate;
 }
 
