@@ -310,9 +310,6 @@ body {
 }
 
 .banner-btn.outlined {
-  background-color: #00cc44; /* Verde vibrante */
-  color: white; /* Texto branco para contraste */
-  border: 2px solid #009933; /* Borda um pouco mais escura */
   color: #FFF;
   border: 3px solid #FFF;
   background-image: url("../img/icon-down.svg");
